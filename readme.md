@@ -33,6 +33,7 @@ img.save('1.png')
 ![](https://i.imgur.com/qToFT5V.png)
 
 如果最后一个参数为0，将变为黑色
+
 ![](https://i.imgur.com/hS5edGw.png)
 
 
