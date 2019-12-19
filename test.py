@@ -1,6 +1,6 @@
 from gif import Gif
 g=Gif('gif.gif')
-img=g.extend(g.imgs[0],(20,40,60,80))
+img=g.extend(g.imgs[0],(20,40,60,80),0)
 img.save('image/1.png')
 img=g.tap(img,'Hello!',local=(10,20),size=30)
 img.save('image/2.png')

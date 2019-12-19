@@ -25,11 +25,15 @@ img.save('gif.png')
 
 
 扩展第一帧图片
+第二个参数为左，右，上，下，数值为扩展的像素数,可以为1~4个，对应相应的位置；最后一个参数是RGB的值，254为白色，默认值；返回Image对象
 ```python
-img=g.extend(img,(20,40,60,80)，254)#第二个参数为左，右，上，下，数值为扩展的像素数,可以为1~4个，对应相应的位置；最后一个参数是RGB的值，254为白色，默认值；返回Image对象
+img=g.extend(img,(20,40,60,80)，254)#
 img.save('1.png')
 ```
 ![](https://i.imgur.com/qToFT5V.png)
+
+如果最后一个参数为0，将变为黑色
+![](https://i.imgur.com/hS5edGw.png)
 
 
 键入文字
