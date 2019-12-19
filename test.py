@@ -1,0 +1,10 @@
+from gif import Gif
+g=Gif('gif.gif')
+img=g.extend(g.imgs[0],(20,40,60,80))
+img.save('image/1.png')
+img=g.tap(img,'Hello!',local=(10,20),size=30)
+img.save('image/2.png')
+imgs=g.mextend(g.imgs,(20,10,20))
+g.save_gif(imgs,'image/3.gif')
+imgs=g.mtap(imgs,'谢谢老哥',local=(10,5),size=19)
+g.save_gif(imgs,'image/4.gif')
